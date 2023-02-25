@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/close"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="35sp"
+            android:fontFamily="@font/archivo"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your phone number to sign up"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/archivo"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/archivo"
+            android:text="COUNTRY"
+            android:textColor="#3C3939"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/etselectcountry"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/etbackground"
+            android:paddingStart="10dp"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:paddingEnd="40dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/archivo"
+            android:text="PHONE NUMBER"
+            android:textColor="#3C3939"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/etbackground"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:hint="Entry"
+            android:textSize="20sp"
+            android:id="@+id/etphoneno"
+            android:paddingRight="40dp"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginbtnbg"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:fontFamily="@font/archivo"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="or with"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvfb"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/google_and_fb_bg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="CONTINUE WITH FACEBOOK"
+            android:textColor="@color/black"
+            android:fontFamily="@font/archivo"
+            android:textSize="17sp"
+            android:paddingStart="20dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/facebook"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:id="@+id/tvtwitter"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/google_and_fb_bg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="CONTINUE WITH TWITTER"
+            android:textColor="@color/black"
+            android:fontFamily="@font/archivo"
+            android:textSize="17sp"
+            android:paddingStart="15dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/twitter"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
